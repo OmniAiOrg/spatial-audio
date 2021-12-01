@@ -1,0 +1,46 @@
+.garden {
+  position: relative;
+  width : min(100vh, 100vw);
+  height: min(100vh, 100vw);
+  border: 1px solid #0a0404;
+  border-radius: 10px;
+}
+
+.ball {
+  border-radius: 15%;
+  width : 20px;
+  height: 20px;
+}
+
+.indicator {
+  position: absolute;
+  top   : min(50vh, 50vw);
+  left  : min(50vh, 50vw);
+  /*background-image: linear-gradient(#ff3ba7, #3d88ff);*/
+  transform: rotate(0deg);
+}
+
+.arrow {
+  position: relative;
+  width: min(30vh, 30vw);
+  left: max(-12vh, -12vw);
+  top: max(-14vh, -14vw);
+}
+
+.human {
+  position: absolute;
+  top: max(-20vh, -20vw);
+}
+
+.guitar {
+  position: absolute;
+  left: min(20vh, 20vw);
+}
+
+.drums {
+  position: absolute;
+  right: min(20vh, 20vw);
+}
+
+
+/*# sourceMappingURL=/orientation.71876372.css.map */
