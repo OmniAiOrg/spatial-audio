@@ -40616,6 +40616,13 @@ new THREE.TextureLoader().load(space_img, function (texture) {
 }, function (xhr) {
   console.log('An error happened');
 });
+window.addEventListener('resize', onWindowResize, false);
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
 
 var glb = require('../img/thefuture.glb');
 
@@ -40867,7 +40874,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57772" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59788" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
